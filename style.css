@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrollbars */
+    cursor: none;
+}
+
+canvas {
+    display: block;
+    background-color: aqua;
+    position: absolute;
+}
+
+button {
+    position: absolute;
+    z-index: 10; /* Ensure buttons are on top of the canvas */
+    padding: 15px 25px; 
+    background-color: #28a745;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px; /* Make the button rounder */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Position the Add Ball button */
+#addBallBtn {
+    top: 55px;
+    left: 20px;
+}
+
+/* Position the Clear Screen button */
+#clearScreenBtn {
+    top: 55px;
+    left: 150px;
+}
+
+button:hover {
+    background-color: #218838;
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
+    border-radius: 50px;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+button:active {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(0.98); /* Pressed-down effect */
+}
+
+/*curser:*/
+
+.cursor-dot{
+    width: 10px;
+    height: 10px;
+    background-color: black;
+}
+
+.cursor-outline{
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+}
+
+.cursor-dot,
+.cursor-outline{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+}
