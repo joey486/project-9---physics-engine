@@ -1,6 +1,3 @@
-
-
-
 export const canvas = document.getElementById('gameCanvas');
 const clear = document.getElementById('clearScreenBtn');
 export const ctx = canvas.getContext('2d');

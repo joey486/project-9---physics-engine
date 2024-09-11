@@ -2,7 +2,7 @@ import { canvas } from "./main.js";
 import { ctx } from "./canvasSetup.js";
 
 let selectedBall = null;
-export let isDragging = false;
+let isDragging = false;
 
 // Physics Engine Parameters
 const gravity = 0.5;
