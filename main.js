@@ -3,8 +3,8 @@ import { Ball } from "./shapes/ball.js";
 import { Square } from "./shapes/square.js";
 
 export let selectedShape = null;
-
 let isDragging = false;
+
 let prevMouseX = 0;
 let prevMouseY = 0;
 

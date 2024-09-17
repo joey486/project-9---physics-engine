@@ -43,10 +43,27 @@ button {
     left: 20px;
 }
 
+#addSquareBtn{
+    top: 55px;
+    left: 80px;
+}
+
 /* Position the Clear Screen button */
 #clearScreenBtn {
     top: 55px;
     left: 150px;
+}
+
+#mesh1 {
+    top: 55px;
+    left: 200px;
+    background-color: crimson;
+}
+
+#mesh2 {
+    top: 55px;
+    left: 240px;
+    background-color: crimson;
 }
 
 button:hover {

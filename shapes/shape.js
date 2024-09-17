@@ -6,5 +6,6 @@ export class Shape{
         this.color = color;
     }
     update (shapes) {
+        
     }
 }
